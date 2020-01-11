@@ -1,0 +1,43 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+header {
+  background: lightblue;
+	display: flex;
+	width: 90%;
+	height: 10vh;
+	margin: auto;
+	align-items: center;
+}
+
+.logo-container, .nav-links {
+  display: flex;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+nav {
+  flex: 1;
+}
+
+.nav-links {
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 18;
+}
+
+main-photo {
+  flex: 1;
+	display: flex;
+	justify-content: center;
+	height: 60vh;
+}
