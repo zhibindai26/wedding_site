@@ -1,43 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-    <title>Home Page</title>
-  </head>
 
-  <body>
-      <header>
-        <div class="logo-container">
-            <h2>DaiAndOstrachDo</h2>
-        </div>
-          <nav>
-              <ul class="nav-links">
-                <li><a class="nav-link" href="#">Our Story</a></li>
-                <li><a class="nav-link" href="#">Ceremony & Reception</a></li>
-                <li><a class="nav-link" href="#">Travel</a></li>
-                <li><a class="nav-link" href="#">Registry</a></li>
-                <li><a class="nav-link" href="#">RSVP</a></li>
-                <li><a class="nav-link" href="https://www.youtube.com/watch?v=PA5HRW4DWz0&t" target="_blank">June 14th</a></li>
-              </ul>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+        <link rel="stylesheet" href="./style.css">
+        <title>Home Page</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="header-navbar">
+            <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="index.html">
+                    <img src=".\img\heart.h-rt_auto">    
+                    </a>
+
+                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                        data-target="navbarBasic">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div id="navbarBasic" class="navbar-menu">
+                    <div class="navbar-end">
+                        <a class="navbar-item" href="index.html">Home</a>
+                        <a class="navbar-item" href="#">Our Story</a>
+                        <a class="navbar-item" href="#">Ceremony & Reception</a>
+                        <a class="navbar-item" href="#">Travel</a>
+                        <a class="navbar-item" href="#">Registry</a>
+                        <a class="navbar-item" href="#">RSVP</a>
+                        <a class="navbar-item" href="https://www.youtube.com/watch?v=PA5HRW4DWz0&" target="_blank">June
+                            14th</a>
+                    </div>
+                </div>
             </nav>
+        </div>
         </header>
-        <main>
-          <div class="container">
-              <div class="date-and-location">
-                  <h1>June 14, 2020, Brookside Gardens</h1>
-              </div>
-          </div>
-          <div class="container">
-              <div class="main-photo">
-                <img src=".\img\DSC_4225_crop.jpg" alt="engagement-photo" />
-              </div>
-          </div>
-          </section>
-          <h3>See you there!</h3>
-        </main>
-  </body>
 
+        <section class="section">
+            <div class="container">
+            <div class="columns is-variable">
+                    <div class="column is-one-third">
+                        <div class="card">
+                            
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src=".\img\2019-08-18_17-51-40_715.jpeg" alt="Placeholder image">
+                                </figure>
+                            </div>
+                            
+                            <div class="card-content">
+                                <p class="title">K. Sarah & Zhibin</p>
+                                <p class="subtitle">June 14, 2020 | Glenmont, MD</p>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="column is-two-thirds">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ouI1_tZ1yK4" frameborder="0"
+                                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer is-dark">
+            <div class="content">
+                <p>#daiandostrachdo</p>
+            </div>
+        </footer>
+    </body>
 </html>
