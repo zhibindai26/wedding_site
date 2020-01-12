@@ -13,11 +13,11 @@
             $('#header').load("..\\assets\\navbar.html");
         });
     </script>
-        <script>
-                $(function () {
-                    $('#footer').load("..\\assets\\footer.html");
-                });
-            </script>
+    <script>
+        $(function () {
+            $('#footer').load("..\\assets\\footer.html");
+        });
+    </script>
 </head>
 
 <header>
@@ -25,11 +25,26 @@
     </div>
 </header>
 
+
 <body>
     <section class="section">
         <div class="container">
             <div class="columns is-variable">
-                <div class="column ">
+                
+                <div class="column is-one-third">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="title">
+                                "Something happened that changed us in a deep and profound way, from that day forward.”
+                            </p>
+                            <p class="subtitle">
+                                Newman
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-two-thirds">
                     <div class="video-container">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/PA5HRW4DWz0" frameborder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -44,8 +59,8 @@
 </body>
 
 <footer>
-        <div id="footer">
-        </div>
-    </footer>
+    <div id="footer">
+    </div>
+</footer>
 
 </html>
