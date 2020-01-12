@@ -1,60 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-        <link rel="stylesheet" href="./style.css">
-        <title>Home Page</title>
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <script>
-            $(function() {
-                $('#header').load(".\\assets\\navbar.html");
-            });
-        </script>
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Home Page</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $('#footer').load(".\\assets\\footer.html");
+        });
+    </script>
+</head>
 
-    <body>
-        <header>
-                <div id="header">
-                    </div>
-        </header>
+<body>
+    <header>
+        <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <img src=".\img\heart.h-rt_auto">
+                </a>
 
-        <section class="section">
-            <div class="container">
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasic">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasic" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="index.html">Home</a>
+                    <a class="navbar-item" href=".\pages\our_story.html">Our Story</a>
+                    <a class="navbar-item" href=".\pages\ceremony.html">Ceremony & Reception</a>
+                    <a class="navbar-item" href=".\pages\travel.html">Travel</a>
+                    <a class="navbar-item" href="#">Registry</a>
+                    <a class="navbar-item" href="https://forms.gle/tyzYnw3eaHhwrghj7" target="_blank">RSVP</a>
+                    <a class="navbar-item" href=".\pages\june14.html">June
+                        14th</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section">
+        <div class="container">
             <div class="columns is-variable">
-                    <div class="column is-one-third">
-                        <div class="card">
-                            
-                            <div class="card-image">
-                                <figure class="image is-4by3">
-                                    <img src=".\img\2019-08-18_17-51-40_715.jpeg" alt="Placeholder image">
-                                </figure>
-                            </div>
-                            
-                            <div class="card-content">
-                                <p class="title">Zhibin & K. Sarah</p>
-                                <p class="subtitle">June 14, 2020 | Wheaton, MD</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="column is-one-third">
+                    <div class="card">
 
-                    <div class="column is-two-thirds">
-                        <div class="video-container">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/xpVfcZ0ZcFM" frameborder="0"
-                                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src=".\img\2019-08-18_17-51-40_715.jpeg" alt="Placeholder image">
+                            </figure>
+                        </div>
+
+                        <div class="card-content">
+                            <p class="title">Zhibin & K. Sarah</p>
+                            <p class="subtitle">June 14, 2020 | Wheaton, MD</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <footer class="footer is-dark">
-            <div class="content">
-                <p>#daiandostrachdo</p>
+                <div class="column is-two-thirds">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/xpVfcZ0ZcFM" frameborder="0"
+                            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
-        </footer>
-    </body>
+        </div>
+    </section>
+        <section class="section"></section>
+
+        <section class="section"></section>
+
+
+    <footer>
+        <div id="footer">
+        </div>
+    </footer>
+</body>
+
 </html>
