@@ -3,6 +3,8 @@ body {
     background-color: hsl(275, 16%, 83%);
 }
 
+
+
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -19,7 +21,7 @@ body {
     }
 
 .section-text {
-    color: white;
+    color:black;
     font-size: 3vh;
 }
 
@@ -28,3 +30,7 @@ body {
         -ms-transform: rotate(180deg);
             transform: rotate(180deg);
 }
+
+.blurred span {
+    filter: blur(6px);
+  }
