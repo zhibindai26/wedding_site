@@ -1,8 +1,37 @@
+<head>
+    <script>
+        CountDownTimer('06/14/2020', 'countdown');
+
+        function CountDownTimer(date, id) {
+            var end = new Date(date);
+            var _day = 1000 * 60 * 60 * 24;
+            var timer;
+
+            function showRemaining() {
+                var now = new Date();
+                var distance = end - now;
+                if (distance < 0) {
+
+                    clearInterval(timer);
+                    document.getElementById("countdown").innerHTML = 0;
+
+                    return;
+                }
+                var days = Math.floor(distance / _day);
+                document.getElementById("countdown").innerHTML = days + " Days to Go!";
+
+            }
+
+            timer = setInterval(showRemaining, 100);
+        }
+    </script>
+</head>
 <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
         <a class="navbar-item" href="./index.html">
             <img src="./img/heart.h-rt_auto">
         </a>
+        <p id="countdown" class="navbar-item"></p>
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
