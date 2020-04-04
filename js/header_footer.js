@@ -5,3 +5,7 @@ $(function () {
 $(function () {
     $('#footer').load("./assets/footer.html");
 });
+
+$(function () {
+    $('#covid').load("./assets/covid.html");
+});
